@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Sexo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éAvoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éAvoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éNetoDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éFilhoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éFilhoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éIrmãoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éIrmãoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éNetoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éNetoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPrimoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPrimoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éIrmãoDe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éSobrinhoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éSobrinhoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTioDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTataranetoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTataranetoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitoDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTataravoDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTataravoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTataravoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éAvoDe"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTioDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éTioDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éParenteDe"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éIrmãoDe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éGenitorDe"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#nome"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Irmao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Irmao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Mae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Mae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Pai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Pai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Primo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Primo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Sexo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Sexo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vó -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vó">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Mae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vô -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vô">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Pai"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Andrei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Andrei">
+        <éIrmãoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Joao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Joao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Joao">
+        <temSexo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#masculino"/>
+        <éPaiDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#gabriel"/>
+        <nome rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Claudio</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#feminino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#feminino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Sexo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#gabriel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#gabriel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#henrique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#henrique">
+        <éSobrinhoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Andrei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#luquinha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#luquinha">
+        <éFilhoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Andrei"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#masculino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#masculino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Sexo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#matilde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#matilde">
+        <temSexo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#feminino"/>
+        <éPaiDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#henrique"/>
+        <nome rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maria</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éAvoDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#feminino"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vó"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éAvoDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#masculino"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Vô"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#feminino"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Mae"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPaiDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#temSexo"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#masculino"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Pai"/>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éIrmãoDe"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Irmao"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#éPrimoDe"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Genito"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3#Primo"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

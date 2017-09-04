@@ -1,0 +1,4 @@
+
+comando para restart do unity
+
+initctl restart unity-panel-service
