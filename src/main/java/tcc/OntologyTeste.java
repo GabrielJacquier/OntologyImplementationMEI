@@ -13,29 +13,29 @@ import org.mindswap.pellet.jena.PelletReasonerFactory;
 public class OntologyTeste {
 
 	public void teste() throws FileNotFoundException {
-		String url_base_owl = "http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3";
-		String NS = url_base_owl + "#";
-
-		ClassLoader classLoader = this.getClass().getClassLoader();
-		String url = classLoader.getResource("familia_rdf.owl").getFile();
-		InputStream in = FileManager.get().open(url);
-
-		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
-//		OntModel wnOntology = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF);
-		wnOntology.read(in, null);
-		System.out.println(wnOntology.isEmpty());
-		Property ehIrmaoDe = wnOntology.getProperty(NS + "éTioDe");
-		System.out.println(ehIrmaoDe.getNameSpace());
-		
-		ResIterator irmaos = wnOntology.listResourcesWithProperty(ehIrmaoDe);
-		System.out.println("passou");
-		System.out.println(irmaos.toList().size());
-
-
-//		ExtendedIterator<Individual> individuals = wnOntology.listIndividuals(wnOntology.getResource(NS + "Mae"));
-		irmaos.toList().forEach(subject -> {
-			System.out.println(subject.getURI());
-		});
+//		String url_base_owl = "http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3";
+//		String NS = url_base_owl + "#";
+//
+//		ClassLoader classLoader = this.getClass().getClassLoader();
+//		String url = classLoader.getResource("familia_rdf.owl").getFile();
+//		InputStream in = FileManager.get().open(url);
+//
+//		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
+////		OntModel wnOntology = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF);
+//		wnOntology.read(in, null);
+//		System.out.println(wnOntology.isEmpty());
+//		Property ehIrmaoDe = wnOntology.getProperty(NS + "éTioDe");
+//		System.out.println(ehIrmaoDe.getNameSpace());
+//		
+//		ResIterator irmaos = wnOntology.listResourcesWithProperty(ehIrmaoDe);
+//		System.out.println("passou");
+//		System.out.println(irmaos.toList().size());
+//
+//
+////		ExtendedIterator<Individual> individuals = wnOntology.listIndividuals(wnOntology.getResource(NS + "Mae"));
+//		irmaos.toList().forEach(subject -> {
+//			System.out.println(subject.getURI());
+//		});
 
 //		OntProperty hasFather = wnOntology.getOntProperty(NS + "hasFather");
 //		NodeIterator parent = wnOntology.listObjectsOfProperty(hasFather);

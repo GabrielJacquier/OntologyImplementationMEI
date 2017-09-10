@@ -25,10 +25,10 @@
 	    <version>2.3.2</version>
 	</dependency>
 	<dependency>
-    <groupId>org.apache.jena</groupId>
-    <artifactId>jena-querybuilder</artifactId>
-    <version>3.4.0</version>
-</dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-querybuilder</artifactId>
+	    <version>3.4.0</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>tcc</finalName>
