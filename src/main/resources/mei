@@ -24,13 +24,27 @@
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comCondicao -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comCondicao"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comCondicao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Condicao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#eElementoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#eElementoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#eFeitaPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#eFeitaPor"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#eFeitaPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Funcao"/>
+    </owl:ObjectProperty>
     
 
 
@@ -81,16 +95,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#possui -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#possui">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Condicao"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#realiza -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#realiza">
@@ -100,22 +104,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#utiliza -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#utiliza">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Servico"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#utiliza -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#utiliza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Servico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#utiliza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
     
 
 
@@ -283,6 +290,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#artigos_de_vestuario">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
+        <temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#blusa"/>
+        <temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#saia"/>
+        <temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vestido"/>
     </owl:NamedIndividual>
     
 
@@ -297,9 +307,21 @@
         <eFeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#alfaiate"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#confeccao"/>
         <utiliza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#artigos_de_vestuario"/>
+        <utiliza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#blusa"/>
+        <utiliza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#saia"/>
+        <utiliza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vestido"/>
         <compreende>- a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</compreende>
         <naoCompreende>- a confecção, sob medida, de roupas profissionais (1413-4/02)
 - a reparação ou conserto de peças do vestuário (9529-1/99)</naoCompreende>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#blusa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#blusa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
+        <eElementoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#artigos_de_vestuario"/>
     </owl:NamedIndividual>
     
 
@@ -351,6 +373,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#saia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#saia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
+        <eElementoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#artigos_de_vestuario"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_c -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_c">
@@ -382,6 +413,15 @@
         <cnae rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1412602</cnae>
         <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1412602</codigo>
         <descricao>CONFECÇÃO, SOB MEDIDA, DE PEÇAS DO VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</descricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vestido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vestido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Objeto"/>
+        <eElementoDe rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#artigos_de_vestuario"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
