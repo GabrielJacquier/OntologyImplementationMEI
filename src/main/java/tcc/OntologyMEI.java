@@ -25,7 +25,7 @@ public class OntologyMEI {
 	}
 
 	private void executeQueryTeste(OntModel wnOntology) throws IOException {
-		String teste = getQueryStringFromSparqlFile("teste.rf");
+		String teste = getQueryStringFromSparqlFile("teste2.rf");
 		Query query = QueryFactory.create(teste);
 		QueryExecution qe = QueryExecutionFactory.create(query, wnOntology);
 		ResultSet results = qe.execSelect();
