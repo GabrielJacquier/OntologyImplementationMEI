@@ -5,8 +5,11 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		OntologyMEI ontologyMei = new OntologyMEI();
-		ontologyMei.reasoner();
+		ExtratorOntologia extrator = new ExtratorOntologia();
+		extrator.extract();
+		
+//		OntologyMEI ontologyMei = new OntologyMEI();
+//		ontologyMei.reasoner();
 	}
 
 }
