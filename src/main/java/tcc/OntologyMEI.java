@@ -16,7 +16,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
-import com.hp.hpl.jena.ontology.DatatypeProperty;
 
 public class OntologyMEI {
 

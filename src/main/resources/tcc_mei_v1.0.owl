@@ -232,6 +232,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
         <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</codigo>
         <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</descricao>
     </owl:NamedIndividual>
@@ -256,6 +257,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
+        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
         <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</codigo>
         <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA</descricao>
     </owl:NamedIndividual>
@@ -266,6 +268,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
+        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
         <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">478</codigo>
         <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE E DE PRODUTOS USADOS</descricao>
     </owl:NamedIndividual>
@@ -276,6 +279,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
+        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
         <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</codigo>
         <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</descricao>
     </owl:NamedIndividual>
