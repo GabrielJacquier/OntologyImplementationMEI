@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#"
-     xml:base="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei"
+<rdf:RDF xmlns="http://www.semanticweb.org/ifsp/mei/cnae#"
+     xml:base="http://www.semanticweb.org/ifsp/mei/cnae"
      xmlns:mei="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ifsp/mei/cnae"/>
     
 
 
@@ -196,7 +196,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de moedas de coleção - numismática</descricao>
+        <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comerciante"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de moedas de coleção - numismática</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -205,7 +208,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de selos de coleção - filatelia</descricao>
+        <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comerciante"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de selos de coleção - filatelia</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -214,7 +220,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de livros e revistas usados</descricao>
+        <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comerciante"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de livros e revistas usados</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -223,7 +232,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</descricao>
+        <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comerciante"/>
+        <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -232,9 +244,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
-        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
-        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</codigo>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</descricao>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -243,12 +262,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#comerciante">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
-        <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#lojista"/>
-        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
-        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comerciante</descricao>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comerciante</mei:descricao>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vendedor</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -256,10 +276,17 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
-        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
-        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</codigo>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA</descricao>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -267,19 +294,17 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
-        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
-        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">478</codigo>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE E DE PRODUTOS USADOS</descricao>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#lojista -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#lojista">
-        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vendedor</descricao>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">478</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE E DE PRODUTOS USADOS</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -287,10 +312,16 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
-        <temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
-        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</codigo>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</descricao>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -298,13 +329,34 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#subclasse_4785799">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
-        <permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
-        <permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4785799</codigo>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE OUTROS ARTIGOS USADOS</descricao>
+        <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#classe_47857"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#divisao_47"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#grupo_478"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#secao_g"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4785799</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE OUTROS ARTIGOS USADOS</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#vendedor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comerciante</mei:descricao>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vendedor</mei:descricao>
     </owl:NamedIndividual>
 </rdf:RDF>
 

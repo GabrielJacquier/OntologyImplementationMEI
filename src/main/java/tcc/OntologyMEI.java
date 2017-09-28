@@ -20,14 +20,14 @@ import org.mindswap.pellet.jena.PelletReasonerFactory;
 public class OntologyMEI {
 
 	public void reasoner() throws IOException {
-		InputStream in = readFileFromResource("mei");
+		InputStream in = readFileFromResource("ontology_infered/mei_v01");
 		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
 		wnOntology.read(in, null);
 		executeQueryTeste(wnOntology);
 	}
 
 	private void executeQueryTeste(OntModel wnOntology) throws IOException {
-		String teste = getQueryStringFromSparqlFile("teste3.rf");
+		String teste = getQueryStringFromSparqlFile("sparql_cnaes_v1.rf");
 		Query query = QueryFactory.create(teste);
 		QuerySolutionMap queryMap = new QuerySolutionMap();
 		queryMap.add("codigo", wnOntology.createTypedLiteral("141"));
