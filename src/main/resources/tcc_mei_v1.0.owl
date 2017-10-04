@@ -279,7 +279,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#lojista">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
-        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vendedor</descricao>
+        <descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lojista</descricao>
     </owl:NamedIndividual>
     
 

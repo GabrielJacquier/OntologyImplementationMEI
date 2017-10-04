@@ -3,10 +3,8 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
 PREFIX mei: <http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#> 
-SELECT ?object ?subject 
+SELECT ?atividade
 WHERE {
-	?object a ?subject . 
-	?subject rdfs:subClassOf mei:GrupoAtividade . 
-	?object mei:eGrupoDe ?alguem . 	
-	FILTER regex(?descricao, "^outros")
+	?subClasse mei:codigo ?cnae .
+	?atividade mei:permitidaPor ?subClasse .
 }

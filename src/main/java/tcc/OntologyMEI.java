@@ -2,6 +2,8 @@ package tcc;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.jena.ontology.OntModel;
@@ -23,14 +25,37 @@ public class OntologyMEI {
 		InputStream in = readFileFromResource("ontology_infered/mei_v01");
 		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
 		wnOntology.read(in, null);
-		executeQueryTeste(wnOntology);
+//		executeQueryAtividadesPermitidasPorCnae(wnOntology);
+//		executeQueryCnaePorOcupacao(wnOntology);
+		executeQueryCnaePorAtividade(wnOntology);
 	}
 
-	private void executeQueryTeste(OntModel wnOntology) throws IOException {
-		String teste = getQueryStringFromSparqlFile("sparql_cnaes_v1.rf");
+	private void executeQueryAtividadesPermitidasPorCnae(OntModel wnOntology) throws IOException {
+		Map<String, String> params = new HashMap<>();
+		params.put("cnae", "4785799");
+		executeQuery(wnOntology, "atividades_permitidas_por_cnae.rf", params);
+	}
+
+	private void executeQueryCnaePorOcupacao(OntModel wnOntology) throws IOException {
+		Map<String, String> params = new HashMap<>();
+		params.put("ocupacaoInformada", "Vendedor");
+		executeQuery(wnOntology, "cnae_por_ocupacao.rf", params);
+	}
+	
+	private void executeQueryCnaePorAtividade(OntModel wnOntology) throws IOException {
+		Map<String, String> params = new HashMap<>();
+		params.put("descricaoInformada", "comércio");
+		executeQuery(wnOntology, "cnae_por_atividade.rf", params);
+	}
+
+	private void executeQuery(OntModel wnOntology, String sparqlFile, Map<String, String> params) throws IOException {
+		String teste = getQueryStringFromSparqlFile(sparqlFile);
 		Query query = QueryFactory.create(teste);
 		QuerySolutionMap queryMap = new QuerySolutionMap();
-		queryMap.add("codigo", wnOntology.createTypedLiteral("141"));
+		params.entrySet().forEach(pair -> {
+			queryMap.add(pair.getKey(), wnOntology.createTypedLiteral(pair.getValue()));
+		});
+
 		QueryExecution qe = QueryExecutionFactory.create(query, wnOntology, queryMap);
 		ResultSet results = qe.execSelect();
 		ResultSetFormatter.out(System.out, results, query);
