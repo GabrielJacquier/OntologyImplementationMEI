@@ -1,4 +1,4 @@
-package tcc;
+package teste;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -19,7 +19,7 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
 
-public class ExtratorOntologia {
+public class ExtratorCnaeTest {
 
 	private String url_base_owl = "http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3";
 	private String NS = url_base_owl + "#";
@@ -41,30 +41,30 @@ public class ExtratorOntologia {
 			quantidadePorDivisao.put(divisaoKey, numero + 1);
 		});
 
-//		showQuantidadePorSecao(1, 3, "A");
-//		showQuantidadePorSecao(5, 9, "B");
-//		showQuantidadePorSecao(10, 33, "C");
-//		showQuantidadePorSecao(35, 35, "D");
-//		showQuantidadePorSecao(36, 39, "E");
-//		showQuantidadePorSecao(41, 43, "F");
-//		showQuantidadePorSecao(45, 47, "G");
-//		showQuantidadePorSecao(49, 53, "H");
-//		showQuantidadePorSecao(55, 56, "I");
-//		showQuantidadePorSecao(58, 63, "J");
-//		showQuantidadePorSecao(64, 66, "K");
-//		showQuantidadePorSecao(68, 68, "L");
-//		showQuantidadePorSecao(69, 75, "M");
-//		showQuantidadePorSecao(77, 82, "N");
-//		showQuantidadePorSecao(84, 84, "O");
-//		showQuantidadePorSecao(85, 85, "P");
-//		showQuantidadePorSecao(86, 88, "Q");
-//		showQuantidadePorSecao(90, 93, "R");
-//		showQuantidadePorSecao(94, 96, "S");
-//		showQuantidadePorSecao(97, 97, "T");
-//		showQuantidadePorSecao(99, 99, "U");
+		showQuantidadePorSecao(1, 3, "A");
+		showQuantidadePorSecao(5, 9, "B");
+		showQuantidadePorSecao(10, 33, "C");
+		showQuantidadePorSecao(35, 35, "D");
+		showQuantidadePorSecao(36, 39, "E");
+		showQuantidadePorSecao(41, 43, "F");
+		showQuantidadePorSecao(45, 47, "G");
+		showQuantidadePorSecao(49, 53, "H");
+		showQuantidadePorSecao(55, 56, "I");
+		showQuantidadePorSecao(58, 63, "J");
+		showQuantidadePorSecao(64, 66, "K");
+		showQuantidadePorSecao(68, 68, "L");
+		showQuantidadePorSecao(69, 75, "M");
+		showQuantidadePorSecao(77, 82, "N");
+		showQuantidadePorSecao(84, 84, "O");
+		showQuantidadePorSecao(85, 85, "P");
+		showQuantidadePorSecao(86, 88, "Q");
+		showQuantidadePorSecao(90, 93, "R");
+		showQuantidadePorSecao(94, 96, "S");
+		showQuantidadePorSecao(97, 97, "T");
+		showQuantidadePorSecao(99, 99, "U");
 
 		System.out.println("Total: " + quantidadePorDivisao.values().stream().mapToInt(inteiro -> inteiro).sum());
-//		showQuantidadePorDivisao(49, 53, "N");
+		showQuantidadePorDivisao(49, 53, "N");
 		
 	}
 

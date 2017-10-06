@@ -1,4 +1,4 @@
-package tcc;
+package teste;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -10,7 +10,7 @@ import org.apache.jena.rdf.model.ResIterator;
 import org.apache.jena.util.FileManager;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
 
-public class OntologyTeste {
+public class ManipulationOntologyTest {
 
 	public void teste() throws FileNotFoundException {
 //		String url_base_owl = "http://www.semanticweb.org/gabriel/ontologies/2017/6/untitled-ontology-3";

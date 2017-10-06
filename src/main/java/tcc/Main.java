@@ -4,12 +4,9 @@ import java.io.IOException;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
-//		ExtratorOntologia extrator = new ExtratorOntologia();
-//		extrator.extract();
-		
-		OntologyMEI ontologyMei = new OntologyMEI();
-		ontologyMei.reasoner();
+	public static void main(String[] args) throws IOException {		
+		ValidaEstruturaOntologiaMEI ontologyMei = new ValidaEstruturaOntologiaMEI();
+		ontologyMei.executarTodasBuscas();
 	}
 
 }
