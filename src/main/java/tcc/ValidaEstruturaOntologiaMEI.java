@@ -24,8 +24,7 @@ public class ValidaEstruturaOntologiaMEI {
 	private OntModel wnOntology;
 
 	public ValidaEstruturaOntologiaMEI() {
-		super();
-		InputStream in = lerArquivoClasspath("ontology_generated/mei_v01");
+		InputStream in = lerArquivoClasspath("ontology_generated/mei_v02");
 		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
 		wnOntology.read(in, null);
 		this.wnOntology = wnOntology;
@@ -34,22 +33,28 @@ public class ValidaEstruturaOntologiaMEI {
 	public void executarTodasBuscas() throws IOException {
 		buscarAtividadesPermitidasPorCnae();
 		buscarCnaePorOcupacao();
-		buscarCnaePorAtividade();
+		buscarCnaePorTextoDaAtividade();
 	}
 
-	private void buscarAtividadesPermitidasPorCnae() throws IOException {
+	public void buscarAtividadesPermitidasPorCnae() throws IOException {
 		Map<String, String> params = new HashMap<>();
 		params.put("cnae", "4785799");
 		executarSparql("atividades_permitidas_por_cnae.rf", params);
 	}
 
-	private void buscarCnaePorOcupacao() throws IOException {
+	public void buscarCnaePorOcupacao() throws IOException {
 		Map<String, String> params = new HashMap<>();
-		params.put("ocupacaoInformada", "Vendedor");
+		params.put("ocupacaoInformada", "Lojista");
 		executarSparql("cnae_por_ocupacao.rf", params);
 	}
 
-	private void buscarCnaePorAtividade() throws IOException {
+	public void buscarCnaePorTextoDaAtividade() throws IOException {
+		Map<String, String> params = new HashMap<>();
+		params.put("descricaoInformada", "comércio");
+		executarSparql("cnae_por_atividade.rf", params);
+	}
+	
+	public void buscarCnaePorTermo() throws IOException {
 		Map<String, String> params = new HashMap<>();
 		params.put("descricaoInformada", "comércio");
 		executarSparql("cnae_por_atividade.rf", params);
