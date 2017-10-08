@@ -53,11 +53,15 @@ public class ValidaEstruturaOntologiaMEI {
 		params.put("descricaoInformada", "comércio");
 		executarSparql("cnae_por_atividade.rf", params);
 	}
-	
+
 	public void buscarCnaePorTermo() throws IOException {
 		Map<String, String> params = new HashMap<>();
-		params.put("descricaoInformada", "comércio");
-		executarSparql("cnae_por_atividade.rf", params);
+		params.put("servicoParam", "comércio");
+		params.put("servicoRequisitoParam", "varejista");
+//		params.put("servicoRequisitoParam", "revista");
+//		params.put("produtoParam", "revista");
+//		params.put("produtoRequisitoParam", "revista");
+		executarSparql("busca_cnae_por_termos2.rf", params);
 	}
 
 	private void executarSparql(String sparqlFile, Map<String, String> params) throws IOException {

@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {		
 		ValidaEstruturaOntologiaMEI ontologyMei = new ValidaEstruturaOntologiaMEI();
-		ontologyMei.executarTodasBuscas();
+		ontologyMei.buscarCnaePorTermo();
 	}
 
 }

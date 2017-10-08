@@ -351,6 +351,9 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+        </owl:propertyChainAxiom>
         <rdfs:comment>Adiciona uma relação da condição com um produto da atividade.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -421,23 +424,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#label"/>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#nome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#nome">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#plural -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#plural"/>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#singular -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#singular"/>
     
 
 
@@ -752,8 +749,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo">
-        <plural>artigos</plural>
-        <singular>artigo</singular>
+        <label>artigo</label>
+        <label>artigos</label>
     </owl:NamedIndividual>
     
 
@@ -770,8 +767,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <plural>calçados</plural>
-        <singular>calçado</singular>
+        <label>calçado</label>
+        <label>calçados</label>
     </owl:NamedIndividual>
     
 
@@ -780,8 +777,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
-        <plural>calcinhas</plural>
-        <singular>calcinha</singular>
+        <label>calcinha</label>
+        <label>calcinhas</label>
     </owl:NamedIndividual>
     
 
@@ -790,8 +787,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa">
         <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <plural>camisas</plural>
-        <singular>camisa</singular>
+        <label>camisa</label>
+        <label>camisas</label>
     </owl:NamedIndividual>
     
 
@@ -800,8 +797,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco">
         <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <plural>casacos</plural>
-        <singular>casaco</singular>
+        <label>casaco</label>
+        <label>casacos</label>
     </owl:NamedIndividual>
     
 
@@ -809,8 +806,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao">
-        <singular>coleção</singular>
-        <singular>coleções</singular>
+        <label>coleção</label>
+        <label>coleções</label>
     </owl:NamedIndividual>
     
 
@@ -818,8 +815,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio">
-        <plural>comércios</plural>
-        <singular>comércio</singular>
+        <label>comércio</label>
+        <label>comércios</label>
     </owl:NamedIndividual>
     
 
@@ -834,8 +831,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
-        <plural>cuecas</plural>
-        <singular>cueca</singular>
+        <label>cueca</label>
+        <label>cuecas</label>
     </owl:NamedIndividual>
     
 
@@ -844,8 +841,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <plural>eletrodomésticos</plural>
-        <singular>eletrodoméstico</singular>
+        <label>eletrodoméstico</label>
+        <label>eletrodomésticos</label>
     </owl:NamedIndividual>
     
 
@@ -853,7 +850,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia">
-        <singular>filatelia</singular>
+        <label>filatelia</label>
     </owl:NamedIndividual>
     
 
@@ -861,7 +858,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo">
-        <singular>íntimo</singular>
+        <label>íntimo</label>
     </owl:NamedIndividual>
     
 
@@ -869,8 +866,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro">
-        <plural>livros</plural>
-        <singular>livro</singular>
+        <label>livro</label>
+        <label>livros</label>
     </owl:NamedIndividual>
     
 
@@ -878,8 +875,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda">
-        <plural>moedas</plural>
-        <singular>moeda</singular>
+        <label>moeda</label>
+        <label>moedas</label>
     </owl:NamedIndividual>
     
 
@@ -888,8 +885,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <plural>móveis</plural>
-        <singular>móvel</singular>
+        <label>móveis</label>
+        <label>móvel</label>
     </owl:NamedIndividual>
     
 
@@ -897,7 +894,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica">
-        <singular>numismatica</singular>
+        <label>numismatica</label>
     </owl:NamedIndividual>
     
 
@@ -905,8 +902,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista">
-        <plural>revistas</plural>
-        <singular>revista</singular>
+        <label>revista</label>
+        <label>revistas</label>
     </owl:NamedIndividual>
     
 
@@ -916,8 +913,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa">
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
-        <plural>roupas</plural>
-        <singular>roupa</singular>
+        <label>roupa</label>
+        <label>roupas</label>
     </owl:NamedIndividual>
     
 
@@ -926,8 +923,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia">
         <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <plural>saias</plural>
-        <singular>saia</singular>
+        <label>saia</label>
+        <label>saias</label>
     </owl:NamedIndividual>
     
 
@@ -935,8 +932,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo">
-        <plural>selos</plural>
-        <singular>selo</singular>
+        <label>selo</label>
+        <label>selos</label>
     </owl:NamedIndividual>
     
 
@@ -951,8 +948,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno">
         <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <plural>ternos</plural>
-        <singular>terno</singular>
+        <label>terno</label>
+        <label>ternos</label>
     </owl:NamedIndividual>
     
 
@@ -960,10 +957,10 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado">
-        <plural>usadas</plural>
-        <plural>usados</plural>
-        <singular>usada</singular>
-        <singular>usado</singular>
+        <label>usada</label>
+        <label>usadas</label>
+        <label>usado</label>
+        <label>usados</label>
     </owl:NamedIndividual>
     
 
@@ -971,8 +968,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista">
-        <singular>varejista</singular>
-        <singular>verejo</singular>
+        <label>varejista</label>
+        <label>verejo</label>
     </owl:NamedIndividual>
     
 
@@ -981,8 +978,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido">
         <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <plural>vestidos</plural>
-        <singular>vestido</singular>
+        <label>vestido</label>
+        <label>vestidos</label>
     </owl:NamedIndividual>
     
 
@@ -990,8 +987,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario">
-        <plural>vestuários</plural>
-        <singular>vestuário</singular>
+        <label>vestuário</label>
+        <label>vestuários</label>
     </owl:NamedIndividual>
     
 
@@ -1005,8 +1002,8 @@
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <plural>comerciantes</plural>
-        <singular>comerciante</singular>
+        <label>comerciante</label>
+        <label>comerciantes</label>
     </owl:NamedIndividual>
     
 
@@ -1015,8 +1012,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
-        <plural>lojistas</plural>
-        <singular>lojista</singular>
+        <label>lojista</label>
+        <label>lojistas</label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
