@@ -24,7 +24,7 @@ public class ValidaEstruturaOntologiaMEI {
 	private OntModel wnOntology;
 
 	public ValidaEstruturaOntologiaMEI() {
-		InputStream in = lerArquivoClasspath("ontology_generated/mei_v02");
+		InputStream in = lerArquivoClasspath("ontology_generated/mei_v01");
 		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
 		wnOntology.read(in, null);
 		this.wnOntology = wnOntology;
@@ -51,7 +51,7 @@ public class ValidaEstruturaOntologiaMEI {
 	public void buscarCnaePorTextoDaAtividade() throws IOException {
 		Map<String, String> params = new HashMap<>();
 		params.put("descricaoInformada", "comércio");
-		executarSparql("cnae_por_atividade.rf", params);
+		executarSparql("cnae_por_atividade_por_texto.rf", params);
 	}
 
 	public void buscarCnaePorServicoEProduto() throws IOException {

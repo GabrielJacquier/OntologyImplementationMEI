@@ -5,6 +5,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX mei: <http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#> 
 SELECT ?atividade
 WHERE {
-	?subClasse mei:codigo ?cnae .
+	?subClasse mei:conjuntoCodigo ?cnae .
 	?atividade mei:permitidaPor ?subClasse .
 }

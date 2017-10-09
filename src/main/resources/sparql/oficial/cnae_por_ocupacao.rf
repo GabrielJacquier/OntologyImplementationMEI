@@ -5,10 +5,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX mei: <http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#> 
 SELECT ?cnae
 WHERE {
-	?ocupacao rdf:type mei:Ocupacao .
-	?ocupacao mei:descricao ?ocupacaoInformada .
+	?ocupacao mei:ocupacaoNome ?ocupacaoInformada .
 	?ocupacao mei:realiza ?atividade .
 	?atividade mei:permitidaPor ?subClasse .
-	?subClasse mei:codigo ?cnae .
+	?subClasse mei:conjuntoCodigo ?cnae .
 }
 GROUP BY ?cnae

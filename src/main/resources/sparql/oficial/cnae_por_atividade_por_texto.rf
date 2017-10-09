@@ -6,8 +6,8 @@ PREFIX mei: <http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#>
 SELECT ?cnae
 WHERE {
 	?atividade mei:permitidaPor ?subClasse .
-	?atividade mei:descricao ?descricao .
-	?subClasse mei:codigo ?cnae .
-	FILTER regex(?descricao, ?descricaoInformada)	
+	?atividade mei:atividadeDescricao ?descricao .
+	?subClasse mei:conjuntoCodigo ?cnae .
+	FILTER regex(?descricao, ?descricaoInformada)
 }
 GROUP BY ?cnae
