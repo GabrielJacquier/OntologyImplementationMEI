@@ -56,8 +56,8 @@ public class ValidaEstruturaOntologiaMEI {
 
 	public void buscarCnaePorServicoEProduto() throws IOException {
 		Map<String, String> params = new HashMap<>();
-		params.put("servicoInformado", "comércio");
-		params.put("produtoInformado", "móvel");
+		params.put("servicoInformado", "confecção");
+		params.put("produtoInformado", "blusa");
 		executarSparql("v2_busca_cnae_por_produto_servico.rf", params);
 	}
 

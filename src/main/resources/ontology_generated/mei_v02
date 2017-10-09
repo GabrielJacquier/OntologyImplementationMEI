@@ -577,6 +577,7 @@
         <mei:excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
         <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
         <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
@@ -597,6 +598,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -694,6 +696,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126">
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14126</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE PEÇAS DE VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857">
@@ -704,6 +719,19 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
         <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</mei:codigo>
         <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14">
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:descricao>
     </owl:NamedIndividual>
     
 
@@ -722,6 +750,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141">
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478">
@@ -736,6 +777,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c">
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
+        <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDÚSTRIAS DE TRANSFORMAÇÃO</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g">
@@ -746,6 +800,21 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
         <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</mei:codigo>
         <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</mei:descricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
+        <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
+        <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
+        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1412602</mei:codigo>
+        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO, SOB MEDIDA, DE PEÇAS DO VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:descricao>
     </owl:NamedIndividual>
     
 
