@@ -22,28 +22,90 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoFinalidadeSatisfeitaPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoFinalidadeSatisfeitaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoFinalidade"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoLocalSatisfeitaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoLocalSatisfeitaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoLocal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoProdutoSatisfeitaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoProdutoSatisfeitaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoProduto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoProdutoSatisfeitaPor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoParaProduto"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
+        </owl:propertyChainAxiom>
         <rdfs:comment>Utilizada para indicar quais elementos satisfazem uma determinada condição</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoDeAtividade -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoDeAtividade">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoServicoSatisfeitaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoServicoSatisfeitaPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoServico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoDeAtividade"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment>Utilizada para indicar que um elemento possui relacao com determinada atividade</rdfs:comment>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
     </owl:ObjectProperty>
     
 
@@ -51,26 +113,35 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoPara -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoPara">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temFinalidade"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temLocal"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temServico"/>
-        </owl:propertyChainAxiom>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoParaProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoParaProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoPara"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoParaProduto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <rdfs:comment>Criada para todo elemento X que possui uma relação de especificidade com Y, de forma que X é um sub-conjunto de Y</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
     </owl:ObjectProperty>
     
 
@@ -78,6 +149,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoCondicao -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoCondicao">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
         <rdfs:comment>Nega uma condicao, de forma que todos elementos que satisfazem essa condição, não são permitidos de serem utilizados na atividade.</rdfs:comment>
@@ -88,15 +160,17 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoElemento -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoElemento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temExcecaoParaAtividade"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoCondicao"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoRequisito"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoSatisfeitoPor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoSatisfeitoPor"/>
         </owl:propertyChainAxiom>
         <rdfs:comment>Nega a relação de fazParteDeAtividade para qualquer elemento, ou seja, adiciona uma excessão para elemento X de forma que X não é permitido de ser utilizado na atividade</rdfs:comment>
     </owl:ObjectProperty>
@@ -106,8 +180,9 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoRequisito -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#excetoRequisito">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdfs:comment>Nega um requisito, de forma que todos que satisfazem um determinado requisito, não são permitidos de serem utilizados na atividade.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -116,8 +191,25 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoParaProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoParaProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#especificoPara"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <rdfs:comment>Criada para todo elemento X que possui uma relação de generalidade com Y, de forma que Y é um sub-conjunto de X</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -165,43 +257,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoPara -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoPara">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temFinalidade"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temLocal"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temServico"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment>Utilizado quando um elemento em alguma condição é tido como requisito para um prpoduto, serviço local ou finalidade. de modo que se eu possuo uma condição com o produto &quot;moeda&quot; e o requisito &quot;coleção&quot;, então coleção é requisitoPara moeda</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoSatisfeitoPor -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoSatisfeitoPor">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoDefinitivo"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <rdfs:comment>Utilizada para indicar quais elementos satisfazem o requisito. Exemplo, todos os elemento que satisfazem o requisito &quot;metal&quot;</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPorCondicao">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
@@ -210,19 +274,165 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelSatisfeitoPor -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoFinalidadeDefinitivoTidoPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelSatisfeitoPor">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoVariavel"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoFinalidadeDefinitivoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoFinalidadeDefinitivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeDefinitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoFinalidadeVariavelTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoFinalidadeVariavelTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeVariavel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoLocalDefinitivoTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoLocalDefinitivoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoLocalDefinitivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalDefinitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoLocalVariavelTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoLocalVariavelTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalVariavel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoProdutoDefinitivoTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoProdutoDefinitivoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoProdutoDefinitivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoProdutoVariavelTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoProdutoVariavelTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoVariavel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoSatisfeitoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoSatisfeitoPor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisito"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdfs:comment>Utilizada para indicar quais elementos satisfazem o requisito. Exemplo, todos os elemento que satisfazem o requisito &quot;metal&quot;</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPorCondicao -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoServicoDefinitivoTidoPor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPorCondicao">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoServicoDefinitivoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoServicoDefinitivo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoDefinitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoServicoVariavelTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoServicoVariavelTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoVariavel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
@@ -234,38 +444,87 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoFinalidade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoFinalidade">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
         <rdfs:subPropertyOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
             </rdf:Description>
         </rdfs:subPropertyOf>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoLocal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoLocal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
         <rdfs:comment>Utilizada quando um elemento satisfaz todos os requisitos de uma condição e possui uma relação de especificidade com a condição. Por exemplo em uma condição que ligasse um produto &quot;planta&quot; e possui-sse um requisito &quot;amarela&quot;, o elemento &quot;girassol&quot; satisfaz essa atividade condição, outro exemplo seria capim, que não satisfaz essa condição por completo, pois não atende o requisito &quot;amarelo&quot; e logo não poderia satisfazer essa condição.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoDefinitivo -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoServico -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoDefinitivo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
-        </owl:propertyChainAxiom>
-        <rdfs:comment>Utilizada quando um elemento atende determinado requisito definitivo, independente da condição, exemplo, &quot;boné&quot; atende o requisito &quot;vestuário&quot;</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoServico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoVariavel -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisito -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisitoVariavel">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazRequisito">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+        </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
         </owl:propertyChainAxiom>
+        <rdfs:comment>Utilizada quando um elemento atende determinado requisito definitivo, independente da condição, exemplo, &quot;boné&quot; atende o requisito &quot;vestuário&quot;</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -274,15 +533,54 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:subPropertyOf>
             <rdf:Description>
-                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoDeAtividade"/>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
             </rdf:Description>
         </rdfs:subPropertyOf>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoFinalidade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoFinalidade">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoLocal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoLocal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
         <rdfs:comment>Relaciona uma atividade com uma condição</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoServico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicaoServico">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
     </owl:ObjectProperty>
     
 
@@ -290,30 +588,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temLocal"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temCondicao"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temServico"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#genericoPara"/>
-        </owl:propertyChainAxiom>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdfs:comment>Utilizada para uma atividade referenciar todos os seus elementos, ou seja serviços, produtos, locais, finalidades e requisitos</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -322,6 +598,11 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temExcecaoParaAtividade -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temExcecaoParaAtividade">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#exceto"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
         <rdfs:comment>Indica que um elemento tem um excecao para certa atividade, de forma que ele não é permitido de ser utilizado pela atividade</rdfs:comment>
     </owl:ObjectProperty>
@@ -331,7 +612,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temFinalidade -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temFinalidade">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade"/>
         <rdfs:comment>Relaciona uma condição com uma finalidade da atividade</rdfs:comment>
     </owl:ObjectProperty>
@@ -341,8 +627,11 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temGrupo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temGrupo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temSubGrupo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdfs:comment>Utilizada quando um dos grupos de CNAEs pertencem a outro grupo, exemplo uma subclasse pertence a uma determinada classe.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -351,7 +640,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temLocal -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temLocal">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal"/>
         <rdfs:comment>Relaciona uma condição a um local especifico, de forma a indicar o local que a atividade deve ser realizada</rdfs:comment>
     </owl:ObjectProperty>
@@ -361,12 +655,34 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temProduto">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoProdutoSatisfeitaPor"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicaoProduto"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicaoSatisfeitaPor"/>
-        </owl:propertyChainAxiom>
         <rdfs:comment>Adiciona uma relação da condição com um produto da atividade.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
     </owl:ObjectProperty>
     
 
@@ -374,9 +690,118 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
         <rdfs:comment>Indica um requisito definitivo que uma condição possui. O requisito definito é usado em casos que o requisito é imutavel, exemplo podemos dizer que o produto é amarelo, isso não muda e isso difere do requisito variavel. Exemplo de condição, tem o serviço &quot;comercio&quot; com o requisito &quot;varejista&quot;.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoFinalidadeDefinitivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoFinalidadeDefinitivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoFinalidadeVariavel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoFinalidadeVariavel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoLocalDefinitivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoLocalDefinitivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoLocalVariavel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoLocalVariavel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoProdutoDefinitivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoProdutoDefinitivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoProdutoVariavel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoProdutoVariavel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoServicoDefinitivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoServicoDefinitivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoDefinitivo"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoDefinitivoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoServicoVariavel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoServicoVariavel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoVariavelTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
     </owl:ObjectProperty>
     
 
@@ -384,6 +809,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisitoVariavel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#requisitoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
         <rdfs:comment>Indica um requisito variavel que uma condição possui. Um requisito variavel é determinado quando ele é circunstancial, podendo ou não estar sobre um produto, um exemplo seria um móvel que pode ou não ser usado, dessa forma conseguimos diferenciar do requisito definitivo, que é por exemplo se um móvel é amarelo.</rdfs:comment>
     </owl:ObjectProperty>
@@ -393,7 +824,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temServico -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temServico">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temElemento"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
         <rdfs:comment>uma relação de uma condição com um serviço</rdfs:comment>
     </owl:ObjectProperty>
@@ -404,6 +840,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temSubGrupo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdfs:comment>Utilizada para os grupos de CNAEs, por exemplo quando um grupo é um sub-conjunto de outro grupo (&quot;subclasse&quot; temSubGrupo &quot;classe&quot;)</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -483,61 +921,197 @@
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoFinalidade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoLocal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeFinalidade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeLocal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeDefinitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeDefinitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeVariavel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoFinalidadeVariavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalDefinitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalDefinitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalVariavel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoLocalVariavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoVariavel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoVariavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoDefinitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoDefinitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoVariavel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoVariavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+    </owl:Class>
     
 
 
@@ -549,13 +1123,17 @@
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+    </owl:Class>
     
 
 
@@ -574,29 +1152,36 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:exceto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
         <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</mei:descricao>
     </owl:NamedIndividual>
@@ -613,6 +1198,9 @@
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
+        <mei:temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
@@ -636,6 +1224,9 @@
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
@@ -656,9 +1247,16 @@
         <mei:permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
         <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_comerciante"/>
         <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista"/>
+        <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de livros e revistas usados</mei:descricao>
     </owl:NamedIndividual>
@@ -674,23 +1272,14 @@
         <mei:realizadaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:temCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</mei:descricao>
     </owl:NamedIndividual>
     
@@ -699,6 +1288,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
@@ -713,6 +1303,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Classe"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
@@ -726,6 +1317,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
@@ -739,6 +1331,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Divisao"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857"/>
@@ -753,6 +1346,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
@@ -766,6 +1360,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Grupo"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
@@ -780,6 +1375,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
@@ -793,6 +1389,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Secao"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47"/>
@@ -807,6 +1404,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
         <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
@@ -822,6 +1420,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Subclasse"/>
         <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
         <mei:permite rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
@@ -841,16 +1440,40 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:temRequisitoProdutoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
     </owl:NamedIndividual>
     
@@ -860,11 +1483,41 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
     </owl:NamedIndividual>
     
 
@@ -873,7 +1526,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia"/>
     </owl:NamedIndividual>
     
@@ -883,8 +1541,20 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:temRequisitoProdutoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
     </owl:NamedIndividual>
     
@@ -894,9 +1564,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
+        <mei:temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
     </owl:NamedIndividual>
     
 
@@ -905,7 +1583,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
     </owl:NamedIndividual>
     
@@ -915,12 +1598,32 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
     </owl:NamedIndividual>
     
 
@@ -929,9 +1632,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
         <mei:temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
+        <mei:temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
     </owl:NamedIndividual>
     
 
@@ -940,11 +1651,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
+        <mei:temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <mei:temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
     </owl:NamedIndividual>
     
@@ -954,8 +1671,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicao"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoServico"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
+        <mei:temRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
         <mei:temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
+        <mei:temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
         <mei:temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
     </owl:NamedIndividual>
     
@@ -964,9 +1687,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
@@ -979,6 +1705,24 @@
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:label>artigo</mei:label>
         <mei:label>artigos</mei:label>
     </owl:NamedIndividual>
@@ -988,13 +1732,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
     </owl:NamedIndividual>
     
 
@@ -1002,28 +1755,16 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <mei:satisfazRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:label>calçado</mei:label>
         <mei:label>calçados</mei:label>
     </owl:NamedIndividual>
@@ -1033,20 +1774,21 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
-        <mei:satisfazRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>calcinha</mei:label>
         <mei:label>calcinhas</mei:label>
@@ -1057,13 +1799,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>camisa</mei:label>
         <mei:label>camisas</mei:label>
     </owl:NamedIndividual>
@@ -1073,13 +1824,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>casaco</mei:label>
         <mei:label>casacos</mei:label>
     </owl:NamedIndividual>
@@ -1089,13 +1849,24 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:requisitoProdutoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:requisitoProdutoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
         <mei:label>coleção</mei:label>
         <mei:label>coleções</mei:label>
     </owl:NamedIndividual>
@@ -1105,11 +1876,14 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <mei:label>comércio</mei:label>
         <mei:label>comércios</mei:label>
     </owl:NamedIndividual>
@@ -1119,8 +1893,13 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeServico"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
+        <mei:label>confecção</mei:label>
+        <mei:label>confecções</mei:label>
     </owl:NamedIndividual>
     
 
@@ -1128,20 +1907,21 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
-        <mei:satisfazRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>cueca</mei:label>
         <mei:label>cuecas</mei:label>
@@ -1152,28 +1932,16 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <mei:satisfazRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:label>eletrodoméstico</mei:label>
         <mei:label>eletrodomésticos</mei:label>
     </owl:NamedIndividual>
@@ -1183,8 +1951,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
         <mei:label>filatelia</mei:label>
     </owl:NamedIndividual>
     
@@ -1193,13 +1965,25 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:requisitoDefinitivoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:requisitoDefinitivoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:requisitoProdutoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
         <mei:label>íntimo</mei:label>
     </owl:NamedIndividual>
     
@@ -1208,7 +1992,13 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:label>livro</mei:label>
         <mei:label>livros</mei:label>
     </owl:NamedIndividual>
@@ -1218,8 +2008,13 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
         <mei:label>moeda</mei:label>
         <mei:label>moedas</mei:label>
     </owl:NamedIndividual>
@@ -1229,28 +2024,16 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <mei:satisfazRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:label>móveis</mei:label>
         <mei:label>móvel</mei:label>
     </owl:NamedIndividual>
@@ -1260,8 +2043,12 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
         <mei:label>numismatica</mei:label>
     </owl:NamedIndividual>
     
@@ -1270,7 +2057,13 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:label>revista</mei:label>
         <mei:label>revistas</mei:label>
     </owl:NamedIndividual>
@@ -1280,30 +2073,37 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
-        <mei:satisfazRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:satisfazRequisitoVariavel rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>roupa</mei:label>
         <mei:label>roupas</mei:label>
     </owl:NamedIndividual>
@@ -1313,13 +2113,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>saia</mei:label>
         <mei:label>saias</mei:label>
     </owl:NamedIndividual>
@@ -1329,8 +2138,13 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
         <mei:label>selo</mei:label>
         <mei:label>selos</mei:label>
     </owl:NamedIndividual>
@@ -1340,10 +2154,19 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoDefinitivo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
+        <mei:requisitoServicoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
+        <mei:label>sob medida</mei:label>
     </owl:NamedIndividual>
     
 
@@ -1351,13 +2174,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>terno</mei:label>
         <mei:label>ternos</mei:label>
     </owl:NamedIndividual>
@@ -1367,13 +2199,34 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoVariavel"/>
-        <mei:requisitoVariavelSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:requisitoVariavelSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:requisitoVariavelSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
-        <mei:requisitoVariavelSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:requisitoVariavelTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
-        <mei:requisitoVariavelTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_livro"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:requisitoVariavelTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:requisitoVariavelTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:label>usada</mei:label>
         <mei:label>usadas</mei:label>
         <mei:label>usado</mei:label>
@@ -1385,13 +2238,21 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoServicoDefinitivo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
+        <mei:requisitoServicoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <mei:label>varejista</mei:label>
         <mei:label>verejo</mei:label>
     </owl:NamedIndividual>
@@ -1401,13 +2262,22 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido">
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
-        <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:label>vestido</mei:label>
         <mei:label>vestidos</mei:label>
     </owl:NamedIndividual>
@@ -1417,12 +2287,30 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoDefinitivo"/>
-        <mei:elementoDeAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
-        <mei:requisitoDefinitivoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:requisitoDefinitivoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
-        <mei:requisitoDefinitivoTidoPorCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisitoProdutoDefinitivo"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:requisitoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:requisitoProdutoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_blusa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcinha"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
+        <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:label>vestuário</mei:label>
         <mei:label>vestuários</mei:label>
     </owl:NamedIndividual>
