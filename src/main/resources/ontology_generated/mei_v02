@@ -875,34 +875,51 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#codigo -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividadeDescricao -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#codigo">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividadeDescricao">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Atividade"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#descricao -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividadeElementoDescricao -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#descricao">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividadeElementoDescricao">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#label -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#conjuntoCodigo -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#label"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#conjuntoCodigo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#nome -->
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#conjuntoDescricao -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#nome">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#conjuntoDescricao">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ConjuntoCNAE"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacaoNome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacaoNome">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1175,7 +1192,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</mei:descricao>
+        <mei:atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</mei:atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1201,7 +1218,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de moedas de coleção - numismática</mei:descricao>
+        <mei:atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de moedas de coleção - numismática</mei:atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1227,7 +1244,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_selo"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de selos de coleção - filatelia</mei:descricao>
+        <mei:atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de selos de coleção - filatelia</mei:atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1250,7 +1267,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de livros e revistas usados</mei:descricao>
+        <mei:atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o comércio varejista de livros e revistas usados</mei:atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1272,7 +1289,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</mei:descricao>
+        <mei:atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</mei:atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1285,8 +1302,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14126</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE PEÇAS DE VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14126</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE PEÇAS DE VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1300,8 +1317,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47857</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS USADOS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1314,8 +1331,8 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1329,8 +1346,8 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">47</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1343,8 +1360,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_14126"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1358,8 +1375,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_classe_47857"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">478</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE E DE PRODUTOS USADOS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">478</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE E DE PRODUTOS USADOS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1372,8 +1389,8 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412602"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDÚSTRIAS DE TRANSFORMAÇÃO</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INDÚSTRIAS DE TRANSFORMAÇÃO</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1387,8 +1404,8 @@
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478"/>
         <mei:temSubGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4785799"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO; REPARAÇÃO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1403,8 +1420,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_14"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_141"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_c"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1412602</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO, SOB MEDIDA, DE PEÇAS DO VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1412602</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONFECÇÃO, SOB MEDIDA, DE PEÇAS DO VESTUÁRIO, EXCETO ROUPAS ÍNTIMAS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1422,8 +1439,8 @@
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_divisao_47"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_grupo_478"/>
         <mei:temGrupo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_secao_g"/>
-        <mei:codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4785799</mei:codigo>
-        <mei:descricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE OUTROS ARTIGOS USADOS</mei:descricao>
+        <mei:conjuntoCodigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4785799</mei:conjuntoCodigo>
+        <mei:conjuntoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE OUTROS ARTIGOS USADOS</mei:conjuntoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1675,8 +1692,8 @@
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestido"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>artigo</mei:label>
-        <mei:label>artigos</mei:label>
+        <mei:atividadeElementoDescricao>artigo</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>artigos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1696,8 +1713,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blusa</mei:label>
-        <mei:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blusas</mei:label>
+        <mei:atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blusa</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blusas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1712,8 +1729,8 @@
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>calçado</mei:label>
-        <mei:label>calçados</mei:label>
+        <mei:atividadeElementoDescricao>calçado</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>calçados</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1737,8 +1754,8 @@
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:label>calcinha</mei:label>
-        <mei:label>calcinhas</mei:label>
+        <mei:atividadeElementoDescricao>calcinha</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>calcinhas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1758,8 +1775,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>camisa</mei:label>
-        <mei:label>camisas</mei:label>
+        <mei:atividadeElementoDescricao>camisa</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>camisas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1779,8 +1796,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>casaco</mei:label>
-        <mei:label>casacos</mei:label>
+        <mei:atividadeElementoDescricao>casaco</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>casacos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1806,8 +1823,8 @@
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
-        <mei:label>coleção</mei:label>
-        <mei:label>coleções</mei:label>
+        <mei:atividadeElementoDescricao>coleção</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>coleções</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1823,8 +1840,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:label>comércio</mei:label>
-        <mei:label>comércios</mei:label>
+        <mei:atividadeElementoDescricao>comércio</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>comércios</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1837,8 +1854,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
-        <mei:label>confecção</mei:label>
-        <mei:label>confecções</mei:label>
+        <mei:atividadeElementoDescricao>confecção</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>confecções</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1862,8 +1879,8 @@
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:temExcecaoParaAtividade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
-        <mei:label>cueca</mei:label>
-        <mei:label>cuecas</mei:label>
+        <mei:atividadeElementoDescricao>cueca</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>cuecas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1878,8 +1895,8 @@
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>eletrodoméstico</mei:label>
-        <mei:label>eletrodomésticos</mei:label>
+        <mei:atividadeElementoDescricao>eletrodoméstico</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>eletrodomésticos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1891,7 +1908,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia"/>
-        <mei:label>filatelia</mei:label>
+        <mei:atividadeElementoDescricao>filatelia</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1912,7 +1929,7 @@
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
-        <mei:label>íntimo</mei:label>
+        <mei:atividadeElementoDescricao>íntimo</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1925,8 +1942,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>livro</mei:label>
-        <mei:label>livros</mei:label>
+        <mei:atividadeElementoDescricao>livro</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>livros</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1939,8 +1956,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
-        <mei:label>moeda</mei:label>
-        <mei:label>moedas</mei:label>
+        <mei:atividadeElementoDescricao>moeda</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>moedas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1955,8 +1972,8 @@
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>móveis</mei:label>
-        <mei:label>móvel</mei:label>
+        <mei:atividadeElementoDescricao>móveis</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>móvel</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1968,7 +1985,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica"/>
-        <mei:label>numismatica</mei:label>
+        <mei:atividadeElementoDescricao>numismatica</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1981,8 +1998,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>revista</mei:label>
-        <mei:label>revistas</mei:label>
+        <mei:atividadeElementoDescricao>revista</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>revistas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2018,8 +2035,8 @@
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>roupa</mei:label>
-        <mei:label>roupas</mei:label>
+        <mei:atividadeElementoDescricao>roupa</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>roupas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2039,8 +2056,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>saia</mei:label>
-        <mei:label>saias</mei:label>
+        <mei:atividadeElementoDescricao>saia</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>saias</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2053,8 +2070,8 @@
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_selo_colecao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao"/>
-        <mei:label>selo</mei:label>
-        <mei:label>selos</mei:label>
+        <mei:atividadeElementoDescricao>selo</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>selos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2074,7 +2091,7 @@
         <mei:requisitoServicoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida"/>
-        <mei:label>sob medida</mei:label>
+        <mei:atividadeElementoDescricao>sob medida</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2094,8 +2111,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>terno</mei:label>
-        <mei:label>ternos</mei:label>
+        <mei:atividadeElementoDescricao>terno</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>ternos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2134,10 +2151,10 @@
         <mei:requisitoVariavelTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <mei:requisitoVariavelTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_livro_revista_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
-        <mei:label>usada</mei:label>
-        <mei:label>usadas</mei:label>
-        <mei:label>usado</mei:label>
-        <mei:label>usados</mei:label>
+        <mei:atividadeElementoDescricao>usada</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>usadas</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>usado</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>usados</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2160,8 +2177,8 @@
         <mei:requisitoServicoDefinitivoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
-        <mei:label>varejista</mei:label>
-        <mei:label>verejo</mei:label>
+        <mei:atividadeElementoDescricao>varejista</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>verejo</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2181,8 +2198,8 @@
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>vestido</mei:label>
-        <mei:label>vestidos</mei:label>
+        <mei:atividadeElementoDescricao>vestido</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>vestidos</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2211,8 +2228,8 @@
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:requisitoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
-        <mei:label>vestuário</mei:label>
-        <mei:label>vestuários</mei:label>
+        <mei:atividadeElementoDescricao>vestuário</mei:atividadeElementoDescricao>
+        <mei:atividadeElementoDescricao>vestuários</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2226,8 +2243,8 @@
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <mei:label>comerciante</mei:label>
-        <mei:label>comerciantes</mei:label>
+        <mei:ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comerciante</mei:ocupacaoNome>
+        <mei:ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comerciantes</mei:ocupacaoNome>
     </owl:NamedIndividual>
     
 
@@ -2240,8 +2257,8 @@
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
         <mei:realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
-        <mei:label>lojista</mei:label>
-        <mei:label>lojistas</mei:label>
+        <mei:ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lojista</mei:ocupacaoNome>
+        <mei:ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lojistas</mei:ocupacaoNome>
     </owl:NamedIndividual>
 </rdf:RDF>
 

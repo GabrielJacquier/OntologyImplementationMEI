@@ -24,7 +24,7 @@ public class ValidaEstruturaOntologiaMEI {
 	private OntModel wnOntology;
 
 	public ValidaEstruturaOntologiaMEI() {
-		InputStream in = lerArquivoClasspath("ontology_generated/mei_v01");
+		InputStream in = lerArquivoClasspath("ontology_generated/mei_v02");
 		OntModel wnOntology = ModelFactory.createOntologyModel(PelletReasonerFactory.THE_SPEC.getLanguage());
 		wnOntology.read(in, null);
 		this.wnOntology = wnOntology;

@@ -3,17 +3,17 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
 PREFIX mei: <http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#>
-SELECT ?cnae ?atividade ?servico ?produto ?elementoExcecao
+SELECT ?cnae ?atividade ?servico ?produto
 WHERE {
 	{?condicaoProduto mei:temProduto ?produto} UNION {?condicaoProduto mei:condicaoProdutoSatisfeitaPor ?produto}
 	{?condicaoServico mei:temServico ?servico} UNION {?condicaoServico mei:condicaoServicoSatisfeitaPor ?servico}
-	?servico mei:label ?servicoInformado .
-	?produto mei:label ?produtoInformado .
+	?servico mei:atividadeElementoDescricao ?servicoInformado .
+	?produto mei:atividadeElementoDescricao ?produtoInformado .
 	?condicaoProduto mei:elementoTidoPor ?atividade .
 	?condicaoServico mei:elementoTidoPor ?atividade .
 	FILTER NOT EXISTS {
 		?atividade mei:excetoElemento ?produto .
 	}
 	?atividade mei:permitidaPor ?subclasse .
-	?subclasse mei:codigo ?cnae .
+	?subclasse mei:conjuntoCodigo ?cnae .
 }
