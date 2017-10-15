@@ -1,4 +1,4 @@
-package service;
+package requisito;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +17,6 @@ import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 import org.mindswap.pellet.jena.PelletReasonerFactory;
-
 
 public class ValidaEstruturaOntologiaMEI {
 
