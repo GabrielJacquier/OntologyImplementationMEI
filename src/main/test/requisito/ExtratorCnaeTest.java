@@ -1,4 +1,4 @@
-package teste;
+package requisito;
 
 import java.io.File;
 import java.io.FileOutputStream;

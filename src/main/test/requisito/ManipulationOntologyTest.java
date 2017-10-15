@@ -1,4 +1,4 @@
-package teste;
+package requisito;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
