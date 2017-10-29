@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import org.apache.jena.ext.com.google.common.base.Predicate;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
@@ -24,8 +24,6 @@ import org.apache.jena.rdf.model.NodeIterator;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.rdf.model.Statement;
-import org.apache.jena.rdf.model.StmtIterator;
 
 import service.io.FileService;
 
@@ -54,13 +52,6 @@ public class OntologyService {
 		return solutions.stream().map(solution -> solution.get(paramNameRDFNode)).collect(Collectors.toList());
 	}
 	
-	public void listRDFNodesByStament(String sparqlFile) throws IOException {
-		Property propertieOnt = ontology.createProperty(MEIResource.PROP_ATIVIDADEDESCRICAO);
-		Statement stament = ontology.createStatement(null, propertieOnt, "oo");
-		stament.getSubject();
-		StmtIterator smtIter = ontology.listStatements();
-	}
-
 	private List<QuerySolution> executeSparql(String sparqlFile, Map<String, String> params) throws IOException {
 		String teste = fileUtil.readStringFromURI(String.format("sparql/oficial/%s.rf", sparqlFile));
 		Query query = QueryFactory.create(teste);
@@ -77,6 +68,41 @@ public class OntologyService {
 		}
 		qe.close();
 		return solutions;
+	}
+
+	public List<RDFNode> listRDFNodesByPropertieValue(String propertieURI, List<String> values) throws IOException {
+		Property propertieOnt = ontology.getProperty(propertieURI);
+		List<RDFNode> nodes = values.stream()
+				.map(label -> ontology.listSubjectsWithProperty(propertieOnt, label))
+				.flatMap(ri -> ri.toList().stream())
+				.distinct()
+				.filter(Objects::nonNull)
+				.collect(Collectors.toList());
+		return nodes;
+	}
+
+	public List<Individual> listindividualsByClass(String classSubjectURI) {
+		OntClass classOnt = ontology.getOntClass(classSubjectURI);
+		return ontology.listIndividuals(classOnt).toList();
+	}
+
+	public List<Resource> filterResourceWithAllPropertieParams(String propertieURI, List<Resource> individualsToFilter, List<RDFNode> params) throws IOException {
+		Property propertieOnt = ontology.getProperty(propertieURI);
+		return individualsToFilter.stream()
+				.filter(individual -> ontology.listObjectsOfProperty(individual, propertieOnt).toList().containsAll(params))
+				.collect(Collectors.toList());
+	}
+
+	public List<Resource> filterResourceNotHasExcecaoToParams(List<Resource> individualsToFilter, List<RDFNode> params) throws IOException {
+		Property propertieOnt = ontology.getProperty(MEIResource.PROP_EXCETOELEMENTO);
+		List<Resource> resourcesWithExcecao = params.stream()
+				.map(param -> ontology.listResourcesWithProperty(propertieOnt, param))
+				.flatMap(resIter -> resIter.toList().stream())
+				.distinct()
+				.collect(Collectors.toList());
+
+		individualsToFilter.removeAll(resourcesWithExcecao);
+		return individualsToFilter;
 	}
 
 }

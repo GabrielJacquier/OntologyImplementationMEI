@@ -55,7 +55,21 @@ public class AtividadeService {
 	}
 
 	public List<AtividadeResponse> listAtividadesByTermos(List<String> termos) throws IOException {
-		ontologyService.listRDFNodesByStament("olhar metodo");
-		return null;
+		List<RDFNode> nodes = ontologyService.listRDFNodesByPropertieValue(MEIResource.PROP_LABEL, termos);
+
+		List<Individual> individuals = ontologyService.listindividualsByClass(MEIResource.CLASS_ATIVIDADE);
+		List<Resource> resources = individuals.stream().map(i -> i.asResource()).collect(Collectors.toList());
+		
+		resources = ontologyService.filterResourceWithAllPropertieParams(MEIResource.PROP_TEMELEMENTO, resources, nodes);
+		resources = ontologyService.filterResourceNotHasExcecaoToParams(resources, nodes);
+		
+		List<String> atividadesDescricao = resources.stream()
+				.map(resource -> ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO))
+				.flatMap(descricoes -> descricoes.stream())
+				.collect(Collectors.toList());
+
+		return atividadesDescricao.stream()
+				.map(descricao -> new AtividadeResponse(descricao))
+				.collect(Collectors.toList());
 	}
 }

@@ -50,11 +50,10 @@ public class MIEIWebRest {
 	}
 
 	@GET
-	@Path("/atividade")
+	@Path("/atividade/descricao")
 	public Response findAtividadesPorTermos(@QueryParam("descricao") String descricao) throws IOException {
 		descricao = descricao != null ? descricao.toLowerCase() : "";
-		List<String> termos = Arrays.asList(descricao.split(" "));
-		return Response.ok(atividadeService.listAtividadesByTermos(termos))
+		return Response.ok(atividadeService.listAtividadesByTermos(Arrays.asList(descricao.split(" "))))
 				.build();
 	}
 }
