@@ -1,9 +1,7 @@
 package web;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -34,7 +32,7 @@ public class MIEIWebRest {
 	}
 
 	@GET
-	@Path("/atividade")
+	@Path("/atividade/cnae")
 	public Response findAtividadesPorCNAE(@QueryParam("cnae") String cnae) throws IOException {
 		cnae = cnae != null ? cnae.toLowerCase() : "";
 		return Response.ok(atividadeService.listAtividadesByCNAE(cnae))

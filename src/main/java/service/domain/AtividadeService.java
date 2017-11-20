@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.ejb.Stateless;
@@ -26,13 +27,12 @@ public class AtividadeService {
 	public List<AtividadeResponse> listAllAtividades() {
 		List<Individual> individuals = ontologyService.listIndividualsByClassURI(MEIResource.CLASS_ATIVIDADE);
 
-		List<String> atividadesDescricao = individuals.stream()
-					.map(individual -> ontologyService.getPropertieValue(individual, MEIResource.PROP_ATIVIDADEDESCRICAO))
-					.flatMap(descricoes -> descricoes.stream())
-					.collect(Collectors.toList());
-
-		return atividadesDescricao.stream()
-				.map(descricao -> new AtividadeResponse(descricao))
+		return individuals.stream()
+				.map(resource -> {
+					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource, MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
+					Optional<String> descricaoAtividade = ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
+					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
+				})
 				.collect(Collectors.toList());
 
 	}
@@ -44,14 +44,13 @@ public class AtividadeService {
 		List<RDFNode> nodes = ontologyService.listRDFNodesBySparql("atividades_permitidas_por_cnae", paramsQuery, "atividade");
 		List<Resource> resources = nodes.stream().map(node -> node.asResource()).collect(Collectors.toList());
 
-		List<String> atividadesDescricao = resources.stream()
-				.map(resource -> ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO))
-				.flatMap(descricoes -> descricoes.stream())
+		return resources.stream()
+				.map(resource -> {
+					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource, MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
+					Optional<String> descricaoAtividade = ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
+					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
+				})
 				.collect(Collectors.toList());
-
-		return atividadesDescricao.stream()
-			.map(descricao -> new AtividadeResponse(descricao))
-			.collect(Collectors.toList());
 	}
 
 	public List<AtividadeResponse> listAtividadesByTermos(List<String> termos) throws IOException {
@@ -63,13 +62,12 @@ public class AtividadeService {
 		resources = ontologyService.filterResourceWithAllPropertieParams(MEIResource.PROP_TEMELEMENTO, resources, nodes);
 		resources = ontologyService.filterResourceNotHasExcecaoToParams(resources, nodes);
 		
-		List<String> atividadesDescricao = resources.stream()
-				.map(resource -> ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO))
-				.flatMap(descricoes -> descricoes.stream())
-				.collect(Collectors.toList());
-
-		return atividadesDescricao.stream()
-				.map(descricao -> new AtividadeResponse(descricao))
+		return resources.stream()
+				.map(resource -> {
+					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource, MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
+					Optional<String> descricaoAtividade = ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
+					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
+				})
 				.collect(Collectors.toList());
 	}
 }

@@ -42,9 +42,23 @@ public class OntologyService {
 	}
 
 	public List<String> getPropertieValue(Resource resource, String propertieURI) {
-		Property propertieOnt = ontology.createProperty(propertieURI);
+		Property propertieOnt = ontology.getProperty(propertieURI);
 		NodeIterator iterator = ontology.listObjectsOfProperty(resource, propertieOnt);
-		return iterator.toList().stream().map(node -> node.toString()).collect(Collectors.toList());
+		return iterator.toList().stream().map(node -> node.toString().toLowerCase()).collect(Collectors.toList());
+	}
+	
+	public List<String> getPropertieValueOfResourceOfPropertie(Resource resource, String propertieURI, String propertieValueURI) {
+		Property propertieOnt = ontology.getProperty(propertieURI);
+		Property propertieValueOnt = ontology.getProperty(propertieValueURI);
+
+		NodeIterator iterator = ontology.listObjectsOfProperty(resource, propertieOnt);
+
+		List<RDFNode> values = iterator.toList().stream()
+				.map(node -> ontology.listObjectsOfProperty(node.asResource(), propertieValueOnt))
+				.flatMap(nodeIter -> nodeIter.toList().stream())
+				.collect(Collectors.toList());
+		
+		return values.stream().map(RDFNode::toString).collect(Collectors.toList());
 	}
 
 	public List<RDFNode> listRDFNodesBySparql(String sparqlFile, Map<String, String> params, String paramNameRDFNode) throws IOException {
