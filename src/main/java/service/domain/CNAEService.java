@@ -19,16 +19,19 @@ public class CNAEService {
 
 	@Inject
 	private OntologyService ontologyService;
+	
+	@Inject
+	private AtividadeService atividadeService;
 
 	public List<CNAEResponse> listCNAEsPorOcupacao(String ocupacao) throws IOException {
 		Map<String, String> paramsQuery = new HashMap<>();
 		paramsQuery.put("ocupacaoInformada", ocupacao);
 
-		List<RDFNode> nodes = ontologyService.listRDFNodesBySparql("cnae_por_ocupacao", paramsQuery, "cnae");
-
-		return nodes.stream()
-			.map(codigo -> new CNAEResponse(codigo.toString()))
-			.collect(Collectors.toList());
+		List<RDFNode> cnaes = ontologyService.listRDFNodesBySparql("cnae_por_ocupacao", paramsQuery, "cnae");
+		return cnaes.stream().map(cnae -> {
+			List<String> atividadesDescricao = atividadeService.listDescricaoAtividadeByCNAE(cnae.toString());
+			return new CNAEResponse(cnae.toString(), atividadesDescricao);
+		}).collect(Collectors.toList());
 	}
 
 }

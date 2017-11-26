@@ -2357,6 +2357,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acessorio">
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_acessorio"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acessorio</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acessorios</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acessório</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acessórios</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2366,6 +2368,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricola</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agricolas</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agrícola</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agrícolas</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2404,6 +2408,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_arado">
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arados</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2484,6 +2490,8 @@
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_calcado"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcados</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calçado</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calçados</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2534,6 +2542,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_chapeu">
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acessorio"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chapeu</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chapeus</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chapéu</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chapéus</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2553,6 +2563,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cientifico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cientifico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cientifico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cientificos</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">científico</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">científicos</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2572,6 +2584,10 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colecao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colecoes</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coleçao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coleçoes</atividadeElementoDescricao>
         <atividadeElementoDescricao>coleção</atividadeElementoDescricao>
         <atividadeElementoDescricao>coleções</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2600,6 +2616,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colhedeira">
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colhedeira</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2607,6 +2624,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comercio</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comercios</atividadeElementoDescricao>
         <atividadeElementoDescricao>comércio</atividadeElementoDescricao>
         <atividadeElementoDescricao>comércios</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2616,6 +2635,10 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confeccao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confeccoes</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confecçao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confecçoes</atividadeElementoDescricao>
         <atividadeElementoDescricao>confecção</atividadeElementoDescricao>
         <atividadeElementoDescricao>confecções</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2627,6 +2650,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao">
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construção</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construções</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contrucao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contrucoes</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contruçao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contruçoes</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2654,6 +2681,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolicao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolicoes</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolição</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolições</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2663,6 +2692,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_depilacao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_depilacao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilacao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilaçao</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilação</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilações</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2685,6 +2716,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico">
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eletrodomestico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eletrodomesticos</atividadeElementoDescricao>
         <atividadeElementoDescricao>eletrodoméstico</atividadeElementoDescricao>
         <atividadeElementoDescricao>eletrodomésticos</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2741,6 +2774,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estetica -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estetica">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estetica</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estetico</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estética</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estéticas</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estético</atividadeElementoDescricao>
@@ -2761,6 +2796,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fabricacao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fabricacao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricaçao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricaçoes</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricação</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricações</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2771,6 +2808,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_faccao">
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faccao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facçao</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facção</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facções</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2799,6 +2837,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fretado">
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fretado</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fretados</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fretamento</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2854,6 +2893,9 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intima</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intimo</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">íntima</atividadeElementoDescricao>
         <atividadeElementoDescricao>íntimo</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
@@ -2934,6 +2976,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquina -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquina">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maquina</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maquinas</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">máquina</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">máquinas</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2952,6 +2996,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medicos</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médico</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médicos</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2961,6 +3007,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico-cirurgico -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico-cirurgico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medico-cirurgico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medicos-cirurgicos</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médico-cirurgico</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médicos-cirugicos</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2970,6 +3018,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mobiliario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mobiliario">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobiliario</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobiliário</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobiliários</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -3000,6 +3049,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel">
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moveis</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">movel</atividadeElementoDescricao>
         <atividadeElementoDescricao>móveis</atividadeElementoDescricao>
         <atividadeElementoDescricao>móvel</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -3150,6 +3201,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviario</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviarios</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviário</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviários</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -3231,8 +3284,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sobmedida">
-        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medida</atividadeElementoDescricao>
-        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sob</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sob-medida</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -3366,6 +3418,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vestuario</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vestuarios</atividadeElementoDescricao>
         <atividadeElementoDescricao>vestuário</atividadeElementoDescricao>
         <atividadeElementoDescricao>vestuários</atividadeElementoDescricao>
     </owl:NamedIndividual>

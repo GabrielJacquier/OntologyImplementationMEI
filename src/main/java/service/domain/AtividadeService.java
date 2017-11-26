@@ -1,6 +1,7 @@
 package service.domain;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,11 +43,7 @@ public class AtividadeService {
 	}
 
 	public List<AtividadeResponse> listAtividadesByCNAE(String cnae) throws IOException {
-		Map<String, String> paramsQuery = new HashMap<>();
-		paramsQuery.put("cnae", cnae);
-
-		List<RDFNode> nodes = ontologyService.listRDFNodesBySparql("atividades_permitidas_por_cnae", paramsQuery, "atividade");
-		List<Resource> resources = nodes.stream().map(node -> node.asResource()).collect(Collectors.toList());
+		List<Resource> resources = listResourceAtividadeByCNAE(cnae);
 
 		return resources.stream()
 				.map(resource -> {
@@ -55,6 +52,25 @@ public class AtividadeService {
 					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
 				})
 				.collect(Collectors.toList());
+	}
+
+	public List<String> listDescricaoAtividadeByCNAE(String cnae) {
+		try {
+			List<Resource> resources = listResourceAtividadeByCNAE(cnae);
+			return resources.stream()
+					.map(resource -> ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny().orElse(""))
+					.collect(Collectors.toList());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return new ArrayList<>();
+	}
+
+	private List<Resource> listResourceAtividadeByCNAE(String cnae) throws IOException {
+		Map<String, String> paramsQuery = new HashMap<>();
+		paramsQuery.put("cnae", cnae);
+		List<RDFNode> nodes = ontologyService.listRDFNodesBySparql("atividades_permitidas_por_cnae", paramsQuery, "atividade");
+		return nodes.stream().map(node -> node.asResource()).collect(Collectors.toList());
 	}
 
 	public List<AtividadeResponse> listAtividadesByTermos(List<String> termos) throws IOException {
