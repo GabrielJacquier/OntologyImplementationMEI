@@ -415,10 +415,6 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeRequisito"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementoTidoPor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#satisfazCondicao"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#temRequisito"/>
         </owl:propertyChainAxiom>
@@ -979,6 +975,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1411802 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1411802">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1411802"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_faccao"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serviços industriais de facção de roupas íntimas e roupas de dormir (corte e costura de golas, punhos ou outras partes das roupas)</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412601 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412601">
+        <excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412601"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confecção de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602">
@@ -987,6 +1006,18 @@
         <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao_sobmedida"/>
         <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a confecção, sob medida, de artigos do vestuário masculino, feminino e infantil (blusas, camisas, vestidos, saias, calças, ternos, casacos, etc.), feitos com qualquer tipo de material (tecidos planos, tecidos de malha, couros, etc.)</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412603 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412603">
+        <excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_1412603"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_faccao"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serviços industriais de facção de blusas, camisas, vestidos, saias, calças, ternos e outras peças do vestuário (corte e costura de golas, punhos ou outras partes das roupas)</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1009,6 +1040,7 @@
         <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4782201"/>
         <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_calcado"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE CALÇADOS</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1018,6 +1050,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4782202">
         <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4782202"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COMÉRCIO VAREJISTA DE ARTIGOS DE VIAGEM</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1064,6 +1097,235 @@
         <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista"/>
         <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outros artigos usados, tais como móveis, utensílios domésticos, eletrodomésticos, roupas e calçados, material de demolição, etc.</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4924800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4924800">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4924800"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_privada"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_publica"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transporte especializado na locomoção de estudantes da rede pública ou privada</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4929901 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4929901">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4929901"/>
+        <temCondicaoLocal rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_municipio"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_passageiro"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_regime_fretado"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario_coletivo"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transporte rodoviário coletivo de passageiros, sob regime de fretamento no âmbito municipal</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930201">
+        <excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga_perigosa"/>
+        <excetoElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mudanca"/>
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4930201"/>
+        <temCondicaoLocal rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_municipio"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transporte rodoviário de carga em geral, exceto de produtos perigosos e mudanças, dentro do município</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930204">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_4930204"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_mudanca_mobiliaria"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transporte rodoviário de mudanças de mobiliário</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7731400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7731400">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_7731400"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_maquina_agricola_sem_operador"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de máquinas e equipamentos agrícolas sem operador, tais como: colhedeiras, arados, adubadoras e similares</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732201">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_7732201"/>
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de máquinas e equipamentos para construção e para demolição sem operador, tais como: betoneiras, tratores, escavadoras, motoniveladoras e similares</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732202">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_7732202"/>
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_andaime"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de andaimes</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7739002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7739002">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_7739002"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_cientifico_sem_operador"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_medico_sem_operador"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional, de curta ou longa duração, de: equipamentos científicos, médicos e hospitalares, elétricos ou não, sem operador</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_1">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9601702"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_textil"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tingimento"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividades de tingimento de todo tipo de artigos têxteis e do vestuário, inclusive de couro e peles</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_2">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9601702"/>
+        <temCondicaoFinalidade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_finalidade_tinturaria"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_coleta"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_entrega"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serviços de coleta e entrega de roupas para tinturarias</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602501_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602501_1">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602501"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_cabelo"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividades de lavagem, corte, penteado, tingimento e outros tratamentos do cabelo</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602501_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602501_2">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602501"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_barbearia"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serviços de barbearia</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_1">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_limpeza_pele"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limpeza de pele</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_2">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_maquilagem"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serviço de maquilagem</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_3">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_facial"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">massagem facial</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_4">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_depilacao"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividade de depilação</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_5">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_emagrecimento"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_estetica"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividades de massagem estética e para emagrecimento</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_6">
+        <excetoCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_hotelaria"/>
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_spa"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividades de spas que não operam estabelecimentos hoteleiros</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_7">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9602502"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_beleza"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atividades de tratamento de beleza</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9609208 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9609208">
+        <permitidaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#cnae_subclasse_9609208"/>
+        <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_animal_domestico"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_embelezamento"/>
+        <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_higiene"/>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIGIENE E EMBELEZAMENTO DE ANIMAIS DOMÉSTICOS</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1574,10 +1836,60 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_finalidade_tinturaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_finalidade_tinturaria">
+        <temFinalidade rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tinturaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_hotelaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_hotelaria">
+        <temLocal rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hotelaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_municipio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_local_municipio">
+        <temLocal rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_municipio"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_acessorio -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_acessorio">
         <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acessorio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_andaime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_andaime">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_andaime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_animal_domestico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_animal_domestico">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_animal"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_domestico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_textil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_textil">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_textil"/>
     </owl:NamedIndividual>
     
 
@@ -1594,6 +1906,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario"/>
         <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
     </owl:NamedIndividual>
@@ -1627,6 +1940,103 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga_perigosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_carga_perigosa">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_perigoso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_cientifico_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_cientifico_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cientifico"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_hospitalar_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_hospitalar_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hospitalar"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_medico_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_medico_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_privada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_privada">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estudante"/>
+        <temRequisitoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_privado"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rede"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_publica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_estudante_rede_publica">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estudante"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_publico"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rede"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_filatelia">
@@ -1645,6 +2055,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_maquina_agricola_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_maquina_agricola_sem_operador">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquina"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_moeda_colecao">
@@ -1654,10 +2074,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_mudanca_mobiliaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_mudanca_mobiliaria">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mudanca"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mobiliario"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_numismatica">
         <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_numismatica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_passageiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_passageiro">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_passageiro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario">
+        <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <temRequisitoProdutoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
     </owl:NamedIndividual>
     
 
@@ -1680,11 +2126,43 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_aluguel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_barbearia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_barbearia">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_barbearia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_coleta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_coleta">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coleta"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_comercio_varejista">
         <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_varejista"/>
         <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_comercio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_confeccao">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
     </owl:NamedIndividual>
     
 
@@ -1698,12 +2176,179 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_depilacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_depilacao">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_depilacao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_embelezamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_embelezamento">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_embelezamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_entrega -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_entrega">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_entrega"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_faccao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_faccao">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_faccao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_higiene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_higiene">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_higiene"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_operacional"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_leasing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_limpeza_pele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_limpeza_pele">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pele"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_limpeza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_maquilagem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_maquilagem">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquilagem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_emagrecimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_emagrecimento">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_emagrecimento"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_massagem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_estetica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_estetica">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estetica"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_massagem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_facial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_facial">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_massagem_facial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_regime_fretado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_regime_fretado">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fretado"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_regime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_spa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_spa">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_spa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tingimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tingimento">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tingimento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte">
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_transporte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_transporte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario_coletivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_transporte_rodoviario_coletivo">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coletivo"/>
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_transporte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_beleza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_beleza">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_beleza"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tratamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_cabelo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_tratamento_cabelo">
+        <temRequisitoServicoDefinitivo rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cabelo"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_corte"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_lavagem"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_penteado"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tingimento"/>
+        <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tratamento"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acabamento -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acabamento">
         <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acabamento</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acabamentos</atividadeElementoDescricao>
+        <rdfs:comment>Acabamento de roupas</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1718,11 +2363,84 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_agricola">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agrícola</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agrícolas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_aluguel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_aluguel">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alugueis</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluguel</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aluguéis</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_andaime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_andaime">
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaime</atividadeDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaimes</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_animal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_animal">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animais</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_arado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_arado">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo">
-        <atividadeElementoDescricao>artigo</atividadeElementoDescricao>
-        <atividadeElementoDescricao>artigos</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artigo</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artigos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_barbearia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_barbearia">
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barbearia</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira">
+        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batoneira</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batoneiras</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_beleza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_beleza">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beleza</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belezas</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1737,14 +2455,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cabelo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cabelo">
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelo</atividadeDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelos</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cachorro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cachorro">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_animal_domestico"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cachorro</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cachorros</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caes</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cães</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cão</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_calcado">
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_calcado"/>
-        <atividadeElementoDescricao>calçado</atividadeElementoDescricao>
-        <atividadeElementoDescricao>calçados</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calçado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calçados</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1766,6 +2507,15 @@
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <atividadeElementoDescricao>camisa</atividadeElementoDescricao>
         <atividadeElementoDescricao>camisas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga">
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carga</atividadeDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cargas</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1800,6 +2550,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cientifico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cientifico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">científico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">científicos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cinto -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cinto">
@@ -1815,6 +2574,32 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colecao">
         <atividadeElementoDescricao>coleção</atividadeElementoDescricao>
         <atividadeElementoDescricao>coleções</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coleta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coleta">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coleta</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coletas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coletivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_coletivo">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coletivo</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coletivos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colhedeira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_colhedeira">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
     </owl:NamedIndividual>
     
 
@@ -1837,6 +2622,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construção</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construções</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_corte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_corte">
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corte</atividadeDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortes</atividadeDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca">
@@ -1844,6 +2647,35 @@
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_intima"/>
         <atividadeElementoDescricao>cueca</atividadeElementoDescricao>
         <atividadeElementoDescricao>cuecas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolição</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demolições</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_depilacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_depilacao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilação</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depilações</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_domestico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_domestico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domestico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domesticos</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doméstico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domésticos</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1859,10 +2691,114 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_emagrecimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_emagrecimento">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emagrecimento</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_embelezamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_embelezamento">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embelezamento</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embelezamentos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_entrega -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_entrega">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entrega</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entregas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equipamento</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equipamentos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador">
+        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavador</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavadora</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavadoras</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estetica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estetica">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estética</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estéticas</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estético</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estéticos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estudante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_estudante">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudante</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estudantes</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fabricacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fabricacao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricação</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricações</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_faccao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_faccao">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faccao</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facção</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facções</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_facial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_facial">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faciais</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">facial</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_filatelia">
         <atividadeElementoDescricao>filatelia</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fretado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_fretado">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fretado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fretados</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1887,10 +2823,54 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_higiene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_higiene">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higiene</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higienização</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">higienizações</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hospitalar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hospitalar">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalar</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospitalares</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hotelaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_hotelaria">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hotelaria</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hotelarias</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_intimo">
         <atividadeElementoDescricao>íntimo</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_lavagem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_lavagem">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lavagem</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_leasing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_leasing">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leasing</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1901,6 +2881,15 @@
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_acessorio"/>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lenço</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lenços</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_limpeza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_limpeza">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limpeza</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limpezas</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1934,11 +2923,74 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquilagem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquilagem">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maquilagem</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_maquina">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">máquina</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">máquinas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_massagem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_massagem">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">massagem</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">massagens</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médicos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico-cirurgico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medico-cirurgico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médico-cirurgico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">médicos-cirugicos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mobiliario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mobiliario">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobiliário</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mobiliários</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_moeda">
         <atividadeElementoDescricao>moeda</atividadeElementoDescricao>
         <atividadeElementoDescricao>moedas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_motoniveladora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_motoniveladora">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motoniveladora</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motoniveladoras</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1950,6 +3002,26 @@
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
         <atividadeElementoDescricao>móveis</atividadeElementoDescricao>
         <atividadeElementoDescricao>móvel</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mudanca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_mudanca">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mudança</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mudanças</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_municipio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_municipio">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">municipio</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">municipios</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">município</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">municípios</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -1971,11 +3043,115 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_operacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_operacional">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">operacionais</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">operacional</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_passageiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_passageiro">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">passageiro</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">passageiros</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peça</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peças</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pele">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pele</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_penteado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_penteado">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penteado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penteados</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_perigoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_perigoso">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perigoso</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perigosos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_privado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_privado">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privada</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privadas</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privados</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_publico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_publico">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publicas</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publico</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">públicas</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">público</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rede -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rede">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privada</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privadas</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privado</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">privados</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_regime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_regime">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regime</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regimes</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_revista">
         <atividadeElementoDescricao>revista</atividadeElementoDescricao>
         <atividadeElementoDescricao>revistas</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_rodoviario">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviário</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rodoviários</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2033,6 +3209,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sem_operador">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sem operador</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sem operadores</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short">
@@ -2062,6 +3247,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_spa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_spa">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spa</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tenis -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tenis">
@@ -2078,6 +3271,64 @@
         <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <atividadeElementoDescricao>terno</atividadeElementoDescricao>
         <atividadeElementoDescricao>ternos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_textil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_textil">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">texteis</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textil</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">têxteis</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">têxtil</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tingimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tingimento">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tingimento</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tingimentos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tinturaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tinturaria">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tinturaria</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tinturarias</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_transporte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_transporte">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transporte</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transportes</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tratamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_tratamento">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tratamento</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tratamentos</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trator</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tratores</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2123,7 +3374,20 @@
 
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_viagem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_viagem"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_viagem">
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viagem</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viagens</atividadeElementoDescricao>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementos_adubadora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elementos_adubadora">
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_agricola_sem_operador"/>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adubadora</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adubadoras</atividadeElementoDescricao>
+    </owl:NamedIndividual>
     
 
 
@@ -2132,6 +3396,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_comerciante">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
         <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4781400_1"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_1"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_2"/>
         <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_3"/>
