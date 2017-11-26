@@ -25,14 +25,14 @@ public class MIEIWebRest {
 	private CNAEService cnaeService;
 
 	@GET
-	@Path("/atividade/all")
+	@Path("atividade/all")
 	public Response findAllAtividades() throws IOException {
 		return Response.ok(atividadeService.listAllAtividades())
 				.build();
 	}
 
 	@GET
-	@Path("/atividade/cnae")
+	@Path("atividade/cnae")
 	public Response findAtividadesPorCNAE(@QueryParam("cnae") String cnae) throws IOException {
 		cnae = cnae != null ? cnae.toLowerCase() : "";
 		return Response.ok(atividadeService.listAtividadesByCNAE(cnae))
@@ -40,7 +40,7 @@ public class MIEIWebRest {
 	}
 
 	@GET
-	@Path("/cnae")
+	@Path("cnae")
 	public Response findCNAEPorOcupacao(@QueryParam("ocupacao") String ocupacao) throws IOException {
 		ocupacao = ocupacao != null ? ocupacao.toLowerCase() : "";
 		return Response.ok(cnaeService.listCNAEsPorOcupacao(ocupacao))
@@ -48,7 +48,7 @@ public class MIEIWebRest {
 	}
 
 	@GET
-	@Path("/atividade/descricao")
+	@Path("atividade/descricao")
 	public Response findAtividadesPorTermos(@QueryParam("descricao") String descricao) throws IOException {
 		descricao = descricao != null ? descricao.toLowerCase() : "";
 		return Response.ok(atividadeService.listAtividadesByTermos(Arrays.asList(descricao.split(" "))))

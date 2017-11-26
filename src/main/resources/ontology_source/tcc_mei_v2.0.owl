@@ -1159,7 +1159,7 @@
         <temCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_maquina_agricola_sem_operador"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
         <temCondicaoServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional"/>
-        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de máquinas e equipamentos agrícolas sem operador, tais como: colhedeiras, arados, adubadoras e similares</atividadeElementoDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de máquinas e equipamentos agrícolas sem operador, tais como: colhedeiras, arados, adubadoras e similares</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -1183,7 +1183,7 @@
         <temProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_andaime"/>
         <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
         <temServico rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_leasing_operacional"/>
-        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de andaimes</atividadeElementoDescricao>
+        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o aluguel e leasing operacional de andaimes</atividadeDescricao>
     </owl:NamedIndividual>
     
 
@@ -2385,8 +2385,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_andaime -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_andaime">
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaime</atividadeDescricao>
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaimes</atividadeDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaime</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andaimes</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2420,7 +2420,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_barbearia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_barbearia">
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barbearia</atividadeDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barbearia</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2458,8 +2458,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cabelo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cabelo">
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelo</atividadeDescricao>
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelos</atividadeDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelo</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelos</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2514,8 +2514,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_carga">
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carga</atividadeDescricao>
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cargas</atividadeDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carga</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cargas</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -2634,8 +2634,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_corte -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_corte">
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corte</atividadeDescricao>
-        <atividadeDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortes</atividadeDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corte</atividadeElementoDescricao>
+        <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortes</atividadeElementoDescricao>
     </owl:NamedIndividual>
     
 
@@ -3391,6 +3391,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_alfaiate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_alfaiate">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_camiseiro"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alfaiate</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_cabelereiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_cabelereiro">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_1"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_2"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelereiro</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_camiseiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_camiseiro">
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camiseiro</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_comerciante -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_comerciante">
@@ -3407,12 +3435,104 @@
     
 
 
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_costureiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_costureiro">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412601"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">costureiro</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_locador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_locador">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7731400"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732201"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732202"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7739002"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">locador</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_lojista">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#Ocupacao"/>
         <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lojista</ocupacaoNome>
         <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lojistas</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_manicure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_manicure">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_1"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_2"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manicure</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_motorista -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_motorista">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4924800"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4929901"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930201"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4930204"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motorista</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_pedicure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_pedicure">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_1"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9602502_2"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedicure</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_pirueiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_pirueiro">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4924800"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pirueiro</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_tintureiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_tintureiro">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_1"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_2"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tintureiro</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_tosador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupacao_tosador">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9609208"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tosador</ocupacaoNome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupação_fabricante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#ocupação_fabricante">
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1411802"/>
+        <realiza rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412603"/>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricante</ocupacaoNome>
+        <ocupacaoNome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricantes</ocupacaoNome>
     </owl:NamedIndividual>
 </rdf:RDF>
 

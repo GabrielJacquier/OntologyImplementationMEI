@@ -29,12 +29,16 @@ public class AtividadeService {
 
 		return individuals.stream()
 				.map(resource -> {
-					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource, MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
-					Optional<String> descricaoAtividade = ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
+					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource,
+							MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
+
+					Optional<String> descricaoAtividade = ontologyService
+							.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
+
 					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
 				})
+				.sorted((p1, p2) -> p1.getCodigoCNAE().compareTo(p2.getCodigoCNAE()))
 				.collect(Collectors.toList());
-
 	}
 
 	public List<AtividadeResponse> listAtividadesByCNAE(String cnae) throws IOException {
