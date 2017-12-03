@@ -83,6 +83,13 @@ public class OntologyService {
 		qe.close();
 		return solutions;
 	}
+	
+	public List<String> filterTermosFindedInOntology(String propertieURI, List<String> termos) throws IOException {
+		Property propertieOnt = ontology.getProperty(propertieURI);
+		return termos.stream()
+				.filter(termo -> ontology.listSubjectsWithProperty(propertieOnt, termo).hasNext())
+				.collect(Collectors.toList());
+	}
 
 	public List<RDFNode> listRDFNodesByPropertieValue(String propertieURI, List<String> values) throws IOException {
 		Property propertieOnt = ontology.getProperty(propertieURI);
@@ -107,13 +114,28 @@ public class OntologyService {
 				.collect(Collectors.toList());
 	}
 
-	public List<Resource> filterResourceNotHasExcecaoToParams(List<Resource> individualsToFilter, List<RDFNode> params) throws IOException {
-		Property propertieOnt = ontology.getProperty(MEIResource.PROP_EXCETOELEMENTO);
-		List<Resource> resourcesWithExcecao = params.stream()
-				.map(param -> ontology.listResourcesWithProperty(propertieOnt, param))
+	public List<Resource> filterResourceNotHasExcecaoToParams(List<Resource> individualsToFilter, List<RDFNode> paramsResource, List<String> params) throws IOException {
+		Property excetoElementoprop = ontology.getProperty(MEIResource.PROP_EXCETOELEMENTO);
+		Property excetoCondicaoProp = ontology.getProperty(MEIResource.PROP_EXCETOCONDICAO);
+		Property temElementoProp = ontology.getProperty(MEIResource.PROP_TEMELEMENTO);
+		Property descricaoElementoProp = ontology.getProperty(MEIResource.PROP_ATIVIDADEELEMENTODESCRICAO);
+
+		List<Resource> resourcesWithExcecao = paramsResource.stream()
+				.map(param -> ontology.listResourcesWithProperty(excetoElementoprop, param))
 				.flatMap(resIter -> resIter.toList().stream())
 				.distinct()
 				.collect(Collectors.toList());
+
+		individualsToFilter = individualsToFilter.stream().filter(indivi -> {
+			NodeIterator ni = ontology.listObjectsOfProperty(indivi, excetoCondicaoProp);
+			return !ni.toList().stream().anyMatch(condicao -> {
+				NodeIterator termosNodeIter = ontology.listObjectsOfProperty(condicao.asResource(), temElementoProp);
+				return termosNodeIter.toList().stream().allMatch(termo -> {
+					NodeIterator descricaoNodeIter = ontology.listObjectsOfProperty(termo.asResource(), descricaoElementoProp);
+					return descricaoNodeIter.toList().stream().anyMatch(descr -> params.contains(descr.toString()));
+				});
+			});
+		}).collect(Collectors.toList());
 
 		individualsToFilter.removeAll(resourcesWithExcecao);
 		return individualsToFilter;

@@ -18,6 +18,7 @@ import org.apache.jena.rdf.model.Resource;
 import service.ontology.MEIResource;
 import service.ontology.OntologyService;
 import web.response.AtividadeResponse;
+import web.response.InformacaoAtividadeResponse;
 
 @Stateless
 public class AtividadeService {
@@ -73,21 +74,26 @@ public class AtividadeService {
 		return nodes.stream().map(node -> node.asResource()).collect(Collectors.toList());
 	}
 
-	public List<AtividadeResponse> listAtividadesByTermos(List<String> termos) throws IOException {
-		List<RDFNode> nodes = ontologyService.listRDFNodesByPropertieValue(MEIResource.PROP_LABEL, termos);
+	public InformacaoAtividadeResponse listAtividadesByTermos(List<String> termos) throws IOException {
+		List<String> termosFinded = ontologyService.filterTermosFindedInOntology(MEIResource.PROP_LABEL, termos);
+		if(termosFinded.isEmpty()) {
+			return new InformacaoAtividadeResponse();
+		}
 
+		List<RDFNode> nodes = ontologyService.listRDFNodesByPropertieValue(MEIResource.PROP_LABEL, termos);
 		List<Individual> individuals = ontologyService.listindividualsByClass(MEIResource.CLASS_ATIVIDADE);
 		List<Resource> resources = individuals.stream().map(i -> i.asResource()).collect(Collectors.toList());
-		
+
 		resources = ontologyService.filterResourceWithAllPropertieParams(MEIResource.PROP_TEMELEMENTO, resources, nodes);
-		resources = ontologyService.filterResourceNotHasExcecaoToParams(resources, nodes);
-		
-		return resources.stream()
+		resources = ontologyService.filterResourceNotHasExcecaoToParams(resources, nodes, termosFinded);
+		List<AtividadeResponse> atividadesresponse = resources.stream()
 				.map(resource -> {
 					Optional<String> subclasseCodigo = ontologyService.getPropertieValueOfResourceOfPropertie(resource, MEIResource.PROP_PERMITIDAPOR, MEIResource.PROP_CONJUNTOCODIGO).stream().findAny();
 					Optional<String> descricaoAtividade = ontologyService.getPropertieValue(resource, MEIResource.PROP_ATIVIDADEDESCRICAO).stream().findAny();
 					return new AtividadeResponse(descricaoAtividade, subclasseCodigo);
 				})
 				.collect(Collectors.toList());
+		return new InformacaoAtividadeResponse(termosFinded, atividadesresponse);
 	}
+
 }
