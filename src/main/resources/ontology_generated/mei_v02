@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/gabriel/ontologies/2017/10/mei#"
-     xml:base="http://www.semanticweb.org/gabriel/ontologies/2017/10/mei"
+<rdf:RDF xmlns="http://www.semanticweb.org/gabriel/ontologies/2017/11/mei#"
+     xml:base="http://www.semanticweb.org/gabriel/ontologies/2017/11/mei"
      xmlns:mei="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/10/mei"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/11/mei"/>
     
 
 
@@ -1241,6 +1241,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_confeccao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -1284,6 +1285,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_medida"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -1325,6 +1327,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_faccao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -1370,6 +1373,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_lenco"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_luva"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -1520,6 +1524,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -1688,6 +1693,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_servico_aluguel"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_aluguel"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_equipamento"/>
@@ -1783,6 +1789,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -1826,6 +1833,7 @@
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_entrega"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_peca"/>
+        <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -2991,6 +2999,7 @@
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -3008,6 +3017,7 @@
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -3039,6 +3049,7 @@
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -3049,6 +3060,7 @@
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -3083,6 +3095,7 @@
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -3093,6 +3106,7 @@
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -3245,9 +3259,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_motoniveladora"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_motoniveladora"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator"/>
@@ -3277,7 +3293,11 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeCondicaoProduto"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_trator"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732201"/>
         <mei:temElemento rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao"/>
@@ -3512,6 +3532,7 @@
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoProdutoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -3522,6 +3543,7 @@
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:condicaoSatisfeitaPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -4187,6 +4209,7 @@
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -4204,6 +4227,7 @@
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -4234,8 +4258,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira">
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_7732201"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_operador"/>
@@ -4932,6 +4960,7 @@
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_construcao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_demolicao"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_operador"/>
@@ -5452,6 +5481,7 @@
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
@@ -5634,11 +5664,31 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeElemento"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#AtividadeProduto"/>
         <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1411802"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412601"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412602"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_1412603"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4781400_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_4785799_4"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_1"/>
+        <mei:elementoTidoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#atividade_9601702_2"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
         <mei:especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_artigo"/>
+        <mei:especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario_novo"/>
+        <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario"/>
         <mei:satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_dormir"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_usado"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_artigo_vestuario_novo"/>
+        <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_peca_vestuario"/>
         <mei:satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_dormir"/>
         <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_dormir"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_novo"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_usado"/>
+        <mei:satisfazRequisito rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_vestuario"/>
         <mei:atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pijama</mei:atividadeElementoDescricao>
         <mei:atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pijamas</mei:atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -5781,6 +5831,7 @@
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
         <mei:genericoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
@@ -5790,6 +5841,7 @@
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>
         <mei:genericoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_terno"/>
@@ -6204,6 +6256,7 @@
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_eletrodomestico"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_movel"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_sandalia"/>
@@ -6308,6 +6361,7 @@
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_camisa"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_casaco"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_cueca"/>
+        <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_saia"/>
         <mei:requisitoSatisfeitoPor rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_short"/>

@@ -2474,8 +2474,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_batoneira">
-        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
-        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batoneira</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">batoneiras</atividadeElementoDescricao>
     </owl:NamedIndividual>
@@ -2818,8 +2818,8 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_escavador">
-        <satisfazCondicao rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_construcao_sem_operador"/>
+        <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_equipamento_demolicao_sem_operador"/>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavador</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavadora</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escavadoras</atividadeElementoDescricao>
@@ -3230,7 +3230,7 @@
     <!-- http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_pijama">
-        <especificoPara rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
+        <especificoParaProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#elemento_roupa"/>
         <satisfazCondicaoProduto rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2017/8/mei#condicao_produto_roupa_dormir"/>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pijama</atividadeElementoDescricao>
         <atividadeElementoDescricao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pijamas</atividadeElementoDescricao>
